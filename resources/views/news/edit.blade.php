@@ -10,7 +10,7 @@
                     <div class="panel-body">
                         <a href="{{url('news')}}" class="btn btn-primary for pull-right">Back</a>
                         </br>
-                        <form class="form-control" method="post" action="{{url('news/'.$news->id}}" enctype="multipart/form-data">
+                        <form class="form-control" method="post" action="{{url('news/'.$news->id)}}" enctype="multipart/form-data">
                             @csrf
                             <input type="hidden" name="_method" value="PUT"/>
 

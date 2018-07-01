@@ -24,7 +24,8 @@
                             <tr>
                                 <td>{{$news->title}}</td>
                                 <td>{{$news->addBy->name}}</td>
-                                <td><img src="{{url('storage/app/'.$news->photo)}}" style="width: 50px; height: 50px;"/></td>
+                                {{$news->photo}}
+                                <td><img src="{{url(asset('storage/app/'.$news->photo))}}" style="width: 50px; height: 50px;"/></td>
                                 <td>{{$news->description}}</td>
                                 <td>
                                     <a href="{{url('news/'.$news->id.'/edit')}}" class="btn btn-primary">Edit</a>
